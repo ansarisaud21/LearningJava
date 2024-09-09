@@ -1,0 +1,28 @@
+//wajp to read "n" number and print1)positive 2)negative 3)zero
+
+import java.io.*;
+import java.util.*;
+
+class P8
+{
+	public static void main(String args[])
+{
+	Console c=System.console();
+	int n= Integer.parseInt(c.readLine("enter value of n"));
+	double data[]=new double[n];
+	
+	for(int i=0;i<data.length;i++)
+	data[i]=Double.parseDouble(c.readLine("enter number"));
+
+	int pc=0,nc=0,zc=0;
+	for(int i=0; i<data.length;i++)
+	{
+		if   (data[i]>0)   pc++;
+		else if (data[i]<0)   nc++;
+		else      zc++;
+
+	}
+	System.out.println("pos="+pc+"neg="+nc+"zero="+zc);
+
+}
+}
