@@ -1,0 +1,24 @@
+//wajp to print the highest and the lowest marks of the student
+import java.util.*;
+import java.io.*;
+class P7
+{
+	public static void main(String args[])
+{
+	Console c=System.console();
+	int n= Integer.parseInt(c.readLine("enter number of student"));
+	int marks[]=new int[n];
+	
+	for(int i=0;i<marks.length;i++)
+	marks[i]=Integer.parseInt(c.readLine("Enter Marks "));
+	
+	Arrays.sort(marks);
+	int lowest=marks[0];
+	int highest=marks[marks.length-1];
+	System.out.println("lowest="+lowest);
+	System.out.println("highest="+highest);
+
+
+
+}
+}
